@@ -1,0 +1,1 @@
+/usr/bin/python3 /content/scripts/run_lm_eval_mx.py --custom_cuda --block_size 16 --scale_bits 8 -- python -m lm_eval run --model hf --model_args pretrained=meta-llama/Llama-3.2-1B --tasks lambada_openai --device cuda:0 --batch_size 32 --output_path /content/results/ex1/20260207_213059_bs16_sb8_cctrue/metrics.json
